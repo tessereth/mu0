@@ -23,15 +23,15 @@
     "    ';' or whitespace the line is ignored.\n"\
     "    ':' the next word is assumed to be a label.\n"\
     "    '#' the next number is stored at the next memory location.\n"\
-    "    '$' the next character is stored as its ascii representation.\n"\
+    "    '$' the next character is stored as its ASCII representation.\n"\
     "If the line starts with one of the three letter commands\n"\
     "    LDA, STO, ADD, SUB, JMP, JGE, JNE\n"\
     "The opcode is stored and the next token is assumed to be the memory address.\n"\
-    "If the memory address starts with a ':' is is assumed to be a label.\n"\
+    "If the memory address starts with a ':' it is assumed to be a label.\n"\
     "If the line starts with STP, 0 is stored at the next memory location.\n"\
     "\n"\
     "The emulator expects a sequence of 4 digit hex numbers, one per line.\n"\
-    "Memory location 0xfff is interpreted as mem-mapped IO. A LDA from 0xfff \n"\
+    "Memory location 0xfff is interpreted as memory-mapped IO. A LDA from 0xfff \n"\
     "reads from stdin and a STO to 0xfff prints to stdout.\n"\
     "\n"\
     "Warnings: Lines must not exceed 90 characters\n"\
