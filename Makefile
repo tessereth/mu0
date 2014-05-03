@@ -27,7 +27,7 @@ $(EXECUTABLE): $(OBJECTS)
 clean:
 	rm -f $(OBJECTS) $(EXECUTABLE)
 
-install:
+install: $(EXECUTABLE)
 	$(INSTALL) $(EXECUTABLE) $(bindir)/$(binprefix)$(EXECUTABLE)
 
 uninstall:
