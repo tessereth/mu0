@@ -2,9 +2,9 @@
 
 # Installation options
 INSTALL=/usr/bin/install
-prefix=/usr/local
-bindir=$(prefix)/bin
-binprefix=
+PREFIX=/usr/local
+BINDIR=$(PREFIX)/bin
+BINPREFIX=
 
 # Compiler options
 CC=gcc
@@ -28,7 +28,7 @@ clean:
 	rm -f $(OBJECTS) $(EXECUTABLE)
 
 install: $(EXECUTABLE)
-	$(INSTALL) $(EXECUTABLE) $(bindir)/$(binprefix)$(EXECUTABLE)
+	$(INSTALL) $(EXECUTABLE) $(BINDIR)/$(BINPREFIX)$(EXECUTABLE)
 
 uninstall:
-	rm -f $(bindir)/$(binprefix)$(EXECUTABLE)
+	rm -f $(BINDIR)/$(BINPREFIX)$(EXECUTABLE)
